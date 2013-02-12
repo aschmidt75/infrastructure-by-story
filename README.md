@@ -24,4 +24,5 @@ Scenario: Check that i am real
 
 Todo
 ====
+- [ ] integrate deps via bundler
 
