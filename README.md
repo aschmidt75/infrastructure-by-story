@@ -21,3 +21,7 @@ Scenario: Check that i am real
         Then i should be a physical machine
         And i should have at least 1 cpu
 ```
+
+Todo
+====
+
