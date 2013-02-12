@@ -1,4 +1,8 @@
 infrastructure-by-story
 =======================
 
-Behaviour driven development for infrastructure
+Infrastructure-by-story is a small, cucumber based example of how to do behaviour driven development for it infrastructure.
+
+Example
+=======
+
