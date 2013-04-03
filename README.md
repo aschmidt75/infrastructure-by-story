@@ -19,9 +19,10 @@ Scenario: I need some networks
         And i should have a netmask_eth1 of 255.255.255.0
 
 Scenario: Check that i am real iron
+        Given my hostname is like "db"
         Then i should be a physical machine
         And i should have at least 2 cpus
-        And i should have at least 2G memory
+        And i should have at least 8G memory
 ```
 
 Given an abstraction layer, which maps physical information (i.e. 192.168.21.0/24) to logical names (i.e. "backend"),
