@@ -8,17 +8,17 @@ Example
 =======
 
 ```
-Feature: network
-        In order to communicate with the backend system
-        As a web server node
-        I need some networks
+Feature: Running Web App platform
+        In order to have a functional Web App 
+        i need networks and servers 
+        and they have to communicate
 
 Scenario: I need some networks
         Given my hostname is like "web"
         Then i should have a network_eth1 of 192.168.21.0
         And i should have a netmask_eth1 of 255.255.255.0
 
-Scenario: Check that i am real iron
+Scenario: Check that database host is correct.
         Given my hostname is like "db"
         Then i should be a physical machine
         And i should have at least 2 cpus
