@@ -29,7 +29,7 @@ Given an abstraction layer, which maps physical information (i.e. 192.168.21.0/2
 an extended version of the above could be encoded as
 
 ```
-Scenario: I need to communication to backend services
+Scenario: I need to communicate to my backend services
         Given my hostname is like "web"
         Then i should have a "backend" network
         And i should have a "log" network
