@@ -11,7 +11,7 @@ Example
 Feature: Running Web App platform
         In order to have a functional Web App 
         i need networks and servers 
-        and they have to communicate
+        and communication should be possible.
 
 Scenario: I need some networks
         Given my hostname is like "web"
