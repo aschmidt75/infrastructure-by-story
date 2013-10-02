@@ -2,7 +2,7 @@ infrastructure-by-story
 =======================
 
 Infrastructure-by-story is a small, cucumber based example of how to do behaviour driven development for infrastructure-related things.
-I relies on facter to collect and check OS data such as networks and the like.
+It relies on facter to collect and check OS data such as networks and the like.
 
 Example
 =======
