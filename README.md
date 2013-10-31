@@ -8,21 +8,24 @@ Example
 =======
 
 ```
-Feature: Running Web App platform
-        In order to have a functional Web App 
-        i need networks and servers 
-        and communication should be possible.
+Feature: Running Portal platform
+        In order to have a functional Portal platform 
+        i need networks and defined servers 
+        and communication must be possible
 
-Scenario: I need some networks
+Scenario: Define a web node
         Given my hostname is like "web"
-        Then i should have a network_eth1 of 192.168.21.0
+        Then i should be a virtual machine
+        And i should have at least 1 cpu with at least 4G memory
+        And i should have a network_eth1 of 192.168.21.0
         And i should have a netmask_eth1 of 255.255.255.0
 
-Scenario: Check that database host is correct.
+Scenario: Define a database node
         Given my hostname is like "db"
         Then i should be a physical machine
         And i should have at least 2 cpus
         And i should have at least 8G memory
+        And i should have a mount /database with at least 250G space
 ```
 
 Given an abstraction layer, which maps physical information (i.e. 192.168.21.0/24) to logical names (i.e. "backend"),
